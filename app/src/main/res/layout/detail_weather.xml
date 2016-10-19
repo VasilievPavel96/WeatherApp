@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:id="@+id/relLayout"
+    android:background="#b0120a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="68"
+        android:textSize="150sp"
+        android:id="@+id/temperatureLabel"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="68"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/degreeLabel"
+        android:layout_alignTop="@+id/temperatureLabel"
+        android:layout_toRightOf="@+id/temperatureLabel"
+        android:layout_toEndOf="@+id/temperatureLabel"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At 5:00 PM it will be"
+        android:id="@+id/timeLabel"
+        android:layout_above="@+id/degreeLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="#80ffffff"
+        android:textSize="18sp"
+        android:textIsSelectable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saint-Petersburg"
+        android:id="@+id/locationLabel"
+        android:layout_above="@+id/timeLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconView"
+        android:layout_alignTop="@+id/locationLabel"
+        android:layout_toLeftOf="@+id/locationLabel"
+        android:layout_toStartOf="@+id/locationLabel"
+        android:layout_marginRight="18dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/temperatureLabel">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HUMIDITY"
+                android:id="@+id/humidityLabel"
+                android:textColor="#80ffffff"
+                android:textSize="18sp"
+                android:textIsSelectable="false"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.88"
+                android:id="@+id/humidityValue"
+                android:textSize="32sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAIN?"
+                android:id="@+id/precipLabel"
+                android:layout_gravity="left"
+                android:textColor="#80ffffff"
+                android:textSize="18sp"
+                android:textIsSelectable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90%"
+                android:id="@+id/precipValue"
+                android:textSize="32sp"
+                android:textIsSelectable="false"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference
+    android:title="Auto update"
+    android:summary="Enable auto update"
+    android:key="update"
+    ></CheckBoxPreference>
+    <ListPreference
+        android:key="frequency"
+        android:dependency="update"
+        android:defaultValue="24"
+        android:summary="Frequency of update"
+        android:entries="@array/entries"
+        android:entryValues="@array/entryValues"
+        android:title="Update speed"></ListPreference>
+</PreferenceScreen>
