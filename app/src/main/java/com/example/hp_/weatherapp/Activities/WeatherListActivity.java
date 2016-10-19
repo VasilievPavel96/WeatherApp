@@ -10,12 +10,9 @@ import android.view.MenuItem;
 import com.example.hp_.weatherapp.Fragments.TodayWeatherFragment;
 import com.example.hp_.weatherapp.Fragments.WeatherListFragment;
 import com.example.hp_.weatherapp.Fragments.WeatherPreferences;
-import com.example.hp_.weatherapp.Model.Forecast;
 import com.example.hp_.weatherapp.R;
-import com.example.hp_.weatherapp.Model.Weather;
 import com.example.hp_.weatherapp.Recievers.WeatherDataReciever;
 
-import java.util.ArrayList;
 
 public class WeatherListActivity extends AppCompatActivity{
     WeatherDataReciever mReciever = new WeatherDataReciever();
